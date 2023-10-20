@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Video;
 
 public class Gun : MonoBehaviour
@@ -12,6 +13,7 @@ public class Gun : MonoBehaviour
     public VideoPlayer _video;
 
     public GameObject _lock;
+    public GameObject _image;
 
     private void Start()
     {
@@ -42,10 +44,16 @@ public class Gun : MonoBehaviour
     {
         gameObject.SetActive(b);
 
+        if (b)
+        {
+            _image.SetActive(true);
+        }
+
         Refresh();
         _video.Stop();
     }
-
+    
+    
     private void Refresh()
     {
         _lock.SetActive(!GameDataManager.Instance.playerData.CheckLock(id));
@@ -53,6 +61,7 @@ public class Gun : MonoBehaviour
 
     public void PlayVideo()
     {
+        _image.SetActive(false);
         _video.Play();
     }
 }
