@@ -64,7 +64,7 @@ public class BuyTimeButton : MonoBehaviour
         AudioManager.Instance.ClickSound();
         switch (_index)
         {
-            case 0:
+            /*case 0:
                 IAPManager.OnPurchaseSuccess = () =>
                     AddTime(1);
                 IAPManager.Instance.BuyProductID(IAPKey.PACK1_REGISTER);
@@ -88,7 +88,7 @@ public class BuyTimeButton : MonoBehaviour
                 IAPManager.OnPurchaseSuccess = () =>
                     AddTime(180);
                 IAPManager.Instance.BuyProductID(IAPKey.PACK5_REGISTER);
-                break;
+                break;*/
         }
     }
 

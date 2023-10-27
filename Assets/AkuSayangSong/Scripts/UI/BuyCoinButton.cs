@@ -63,7 +63,7 @@ public class BuyCoinButton : MonoBehaviour
     {
         AudioManager.Instance.ClickSound();
 
-        IAPManager.OnPurchaseSuccess = AddCoin;
+        /*IAPManager.OnPurchaseSuccess = AddCoin;
 
         switch (_index)
         {
@@ -82,7 +82,7 @@ public class BuyCoinButton : MonoBehaviour
             case 4:
                 IAPManager.Instance.BuyProductID(IAPKey.PACK5);
                 break;
-        }
+        }*/
     }
 
     private void AddCoin()

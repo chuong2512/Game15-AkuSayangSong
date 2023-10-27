@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ee4c4ca6cfa61144afedeeae597be3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _screenType: 1
+  _screenType: 7
 --- !u!1 &631432054025941578
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,7 +996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ee4c4ca6cfa61144afedeeae597be3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _screenType: 2
+  _screenType: 7
 --- !u!1 &4731892362049224790
 GameObject:
   m_ObjectHideFlags: 0
